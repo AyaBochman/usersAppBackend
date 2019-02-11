@@ -5,7 +5,10 @@ const Schema = mongoose.Schema;
 //model declaration
 const usersSchema = new Schema(
     {
-        _id: String,
+     
+        userId:{
+          type: String
+        },
         balance: {
           type: String,
         
@@ -30,7 +33,10 @@ const usersSchema = new Schema(
         },
        
       },
-      { _id: false }
+      {
+        versionKey: false
+      }
+      // { _id: false }
     )
 
 //model registration
